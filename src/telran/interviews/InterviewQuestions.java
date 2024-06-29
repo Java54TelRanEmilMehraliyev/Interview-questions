@@ -33,7 +33,17 @@ public class InterviewQuestions {
 		return result;
 	}
 	
+	
 	static public boolean isSum2(int[] array,int sum) {
+		Set<Integer> seenNumbers = new HashSet<>();
+		
+		for(int num : array) {
+			int complement = sum - num;
+			if(seenNumbers.contains(complement)) {
+				return true;
+			}
+			seenNumbers.add(num);
+		}
 		return false;
 	}
 	
