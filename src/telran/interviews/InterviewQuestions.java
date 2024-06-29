@@ -48,6 +48,18 @@ public class InterviewQuestions {
 	}
 	
 	static public int getMaxWithNegativePresentation(int [] array) {
-		return -1;
+		Set<Integer> numbers = new HashSet<>();
+		int max = -1;
+		
+		for(int num : array) {
+			numbers.add(num);
+		}
+		
+		for(int num : array) {
+			if(num > 0 && numbers.contains(-num)) {
+				max = Math.max(max, num);
+			}
+		}
+		return max;
 	}
 }
