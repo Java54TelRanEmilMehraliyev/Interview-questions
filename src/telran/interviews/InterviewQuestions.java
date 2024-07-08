@@ -80,7 +80,7 @@ public class InterviewQuestions {
 	}
 
 	public static boolean isAnagram(String word, String anagram) {
-		// TODO
+		// DONE
 		// returns true if "anagram" string contains all
 		// letters from "word" in another order (case sensitive)
 		// O[N] (sorting is disallowed)
@@ -97,7 +97,7 @@ public class InterviewQuestions {
 	}
 
 	public static List<DateRole> assignRoleDates(List<DateRole> rolesHistory, List<LocalDate> dates) {
-		// TODO
+		// DONE
 		// create List<DateRole> with roles matching with the given dates
 		// most effective data structure
 		TreeMap<LocalDate, String> roleMap = new TreeMap<>();
@@ -115,7 +115,7 @@ public class InterviewQuestions {
 	}
 
 	public static void displayDigitsStatistics() {
-		// TODO
+		// DONE
 		// display out statistics in the following format (example)
 		/*
 		 * 1 -> <count of occurrences> 2 -> ..... .........
